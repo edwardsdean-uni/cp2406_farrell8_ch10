@@ -1,11 +1,11 @@
 import javax.swing.*;
-public class DebugPhoneBook extends DebugBook
-{
-   private String area
-   private String size 
-   private final int CUTOFF = 30;
-   FixDebugPhoneBook(int pages, int city)
-   {
+
+public class DebugPhoneBook extends DebugBook {
+   String area;
+   String size;
+   final int CUTOFF = 30;
+
+   DebugPhoneBook(int pages, String city) {
       super(pages);
       area = city;
       if(pages < CUTOFF)
